@@ -1,7 +1,9 @@
 name: Github Actions
-run-name: $ {{ github.actor }}'s workflow
+run-name: ${{ github.actor }}'s workflow
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   build:
